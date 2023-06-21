@@ -80,6 +80,11 @@
   flex-direction: column;
 }
 
+.cardTop .oldPrice {
+display: flex;
+align-items: center;
+}
+
 .priceBlock .cardTitle {
   font-weight: bold;
   font-size: 25px;
@@ -98,6 +103,18 @@
   background: -webkit-linear-gradient(316deg, #e62117 30%, #a30000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.priceBlock .card_two_saleBis { 
+
+  margin-left: 50px;
+  margin-top: 20px;
+
+  text-decoration: line-through;
+  text-decoration-color: #a30000;
+  font-size: 25px;
+  color: #303030;
+
 }
 
 .priceBlock .cardSmall {
