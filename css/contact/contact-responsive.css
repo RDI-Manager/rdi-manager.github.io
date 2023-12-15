@@ -1,22 +1,25 @@
 @media (max-width: 1390px) {
+
   .form input,
   #message,
   #subject {
-      width: 520px;
-    }
+    width: 520px;
+  }
 }
+
 .contactPage .blockRight p {
   margin-bottom: 15px;
   width: 65%;
 }
 
 @media (max-width: 1270px) {
+
   .form input,
   #message,
   #subject {
-      width: 470px;
-      
-    }
+    width: 470px;
+
+  }
 }
 
 @media (max-width: 1250px) {
@@ -35,9 +38,9 @@
   .form input,
   #message,
   #subject {
-      width: 420px;
-      padding: 5px 10px;
-    }
+    width: 420px;
+    padding: 5px 10px;
+  }
 
   .contactPage .contactInfo {
     display: flex;
@@ -73,6 +76,7 @@
 }
 
 @media (max-width: 1100px) {
+
   .form input,
   #subject {
     width: 350px;
@@ -94,9 +98,14 @@
   .contactPage .blockRight {
     width: 90%;
   }
+
   .contactPage .blockRight h2 {
     font-size: 30px;
     letter-spacing: 1px;
+  }
+
+  .blockRight .g-recaptcha iframe {
+    max-width: 100%;
   }
 
   .contactPage .blockLeft {
@@ -128,16 +137,14 @@
 
   iframe {
     width: 500px;
-
-    margin: 20px 0;
   }
 }
 
 @media (max-width: 1000px) {
 
   .form input,
-.form textarea,
-#subject {
+  .form textarea,
+  #subject {
     width: 310px;
   }
 }
@@ -145,44 +152,45 @@
 @media (max-width: 875px) {
 
   .contactPage .form {
-  display: flex;
+    display: flex;
 
-  flex-direction: column;
-  width: 95%;
-  padding: 15px 50px;
-  background: #eeeeee;
-  border-radius: 10px;
-}
+    flex-direction: column;
+    width: 95%;
+    padding: 15px 50px;
+    background: #eeeeee;
+    border-radius: 10px;
+  }
 
-.form input,
-#message,
-#subject {
+  .form input,
+  #message,
+  #subject {
     width: 400px;
   }
 }
 
 @media (max-width: 790px) {
-.form input,
-#message,
-#subject {
+
+  .form input,
+  #message,
+  #subject {
     width: 390px;
   }
 }
 
 @media (max-width: 760px) {
-  
-.form input,
-#message,
-#subject {
+
+  .form input,
+  #message,
+  #subject {
     width: 380px;
   }
 }
 
 @media (max-width: 720px) {
-  
-.form input,
-#message,
-#subject {
+
+  .form input,
+  #message,
+  #subject {
     width: 370px;
   }
 
@@ -199,30 +207,49 @@
 }
 
 @media (max-width: 690px) {
-  
+
   .form input,
   #message,
   #subject {
-      width: 325px;
-    }
+    width: 325px;
+  }
 }
 
 @media (max-width: 660px) {
-  
+
   .form input,
   #message,
   #subject {
-      width: 320px;
-    }
+    width: 320px;
+  }
+
+  .blockRight .g-recaptcha iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 634px) {
+
+  .blockRight .g-recaptcha iframe {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 636px) {
+  .blockRight .g-recaptcha iframe {
+    max-width: 300px;
+    max-height: 80px;
+  }
 }
 
 @media (max-width: 630px) {
-  
+
   .form input,
   #message,
   #subject {
-      width: 300px;
-    }
+    width: 300px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -240,16 +267,17 @@
   .form input,
   #message,
   #subject {
-      width: 250px;
-    }
+    width: 250px;
+  }
 }
 
 @media (max-width: 520px) {
+
   .form input,
   #message,
   #subject {
-      width: 230px;
-    }
+    width: 230px;
+  }
 
   #case {
     height: 30px;
@@ -258,6 +286,10 @@
 
   iframe {
     width: 400px;
+  }
+
+  .g-recaptcha {
+    transform: scale(0.8);
   }
 }
 
@@ -269,9 +301,9 @@
   .form input,
   #message,
   #subject {
-      width: 200px;
-      padding: 5px 10px;
-    }
+    width: 200px;
+    padding: 5px 10px;
+  }
 
   #case {
     height: 35px;
@@ -296,30 +328,37 @@
 }
 
 @media (max-width: 460px) {
+
   .form input,
   #message,
   #subject {
-      width: 190px;
-      padding: 5px 12px;
-    }
+    width: 190px;
+    padding: 5px 12px;
+  }
 }
 
 @media (max-width: 430px) {
+
   .form input,
   #message,
   #subject {
-      width: 180px;
-      padding: 5px 10px;
-    }
+    width: 180px;
+    padding: 5px 10px;
+  }
+
+  .g-recaptcha {
+    transform: scale(0.6);
+  }
 }
 
 @media (max-width: 320px) {
+
   .form input,
   #message,
   #subject {
-      width: 170px;
-      padding: 5px 10px;
-    }
+    width: 170px;
+    padding: 5px 10px;
+  }
 
   .form #textZone {
     width: 220px;
@@ -336,5 +375,9 @@
 
   iframe {
     width: 260px;
+  }
+
+  .g-recaptcha {
+    transform: scale(0.4);
   }
 }
