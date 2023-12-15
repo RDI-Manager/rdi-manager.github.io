@@ -78,6 +78,15 @@
     <meta name="twitter:site" content="@Eureka_Conseil">
     <meta name="twitter:image" content="https://app.rdimanager.com/build/assets/img/logosignRDI.png" />
     <title>Solution de gestion de projet| Nous contacter | RDI-Manager</title>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
 </head>
 
 <body>
@@ -148,7 +157,8 @@
                                     <div class="arrow"><i class="pe-7s-angle-down arrowDown"></i></div>
                                 </div>
                                 <div class="childTwo">
-                                    <a data-i18n="nav_insight_actualites" href="https://rdimanager.com/actualites.html"></a>
+                                    <a data-i18n="nav_insight_actualites"
+                                        href="https://rdimanager.com/actualites.html"></a>
                                     <a data-i18n="nav_insight_ressources" href="#"></a>
                                 </div>
                             </div>
@@ -357,6 +367,8 @@
                             </label>
                         </div>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LeIWDIpAAAAAMn7uHNMgOdWycQXxOr73F3UcCWf"></div>
+
                     <div class="lineContact" id="btnSend">
                         <button class="btn btn-hover bg-blue bg-blue-hover" type="submit"
                             data-i18n="contact_send_form"></button>
@@ -382,8 +394,7 @@
                                 <div></div>
                             </a>
 
-                            <a href="https://www.youtube.com/@rdi-manager/featured"><i
-                                    class="mdi mdi-youtube-play"></i>
+                            <a href="https://www.youtube.com/@rdi-manager/featured"><i class="mdi mdi-youtube-play"></i>
                                 <div></div>
                             </a>
                             <a href="https://twitter.com/eureka_conseil?lang=fr"><i class="mdi mdi-twitter"></i>
@@ -462,6 +473,22 @@
         (function () {
             emailjs.init("uymSMNtZV5HgY1O9_");
         })();
+    </script>
+
+    <!-- <script reCAPTCHA validation côté client -->
+    <script>
+        function validerFormulaire() {
+            var response = grecaptcha.getResponse();
+
+            if (response.length === 0) {
+                // Le reCAPTCHA n'a pas été résolu
+                alert("Veuillez cocher la case reCAPTCHA");
+                return false; // Empêche l'envoi du formulaire
+            } else {
+                // Le reCAPTCHA a été résolu, le formulaire peut être soumis
+                return true;
+            }
+        }
     </script>
 </body>
 
