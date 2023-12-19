@@ -79,14 +79,6 @@
     <meta name="twitter:image" content="https://app.rdimanager.com/build/assets/img/logosignRDI.png" />
     <title>Solution de gestion de projet| Nous contacter | RDI-Manager</title>
 
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-        }
-    </script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfpqzIpAAAAALp-0xBtVS8tnCoK0uK0Iw-rpi8x"></script>
 </head>
 
 <body>
@@ -367,7 +359,6 @@
                             </label>
                         </div>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LfpqzIpAAAAALp-0xBtVS8tnCoK0uK0Iw-rpi8x"></div>
 
                     <div class="lineContact" id="btnSend">
                         <button class="btn btn-hover bg-blue bg-blue-hover" type="submit"
@@ -473,22 +464,6 @@
         (function () {
             emailjs.init("uymSMNtZV5HgY1O9_");
         })();
-    </script>
-
-    <!-- <script reCAPTCHA validation côté client -->
-    <script>
-        function validerFormulaire() {
-            var response = grecaptcha.getResponse();
-
-            if (response.length === 0) {
-                // Le reCAPTCHA n'a pas été résolu
-                alert("Veuillez cocher la case reCAPTCHA");
-                return false; // Empêche l'envoi du formulaire
-            } else {
-                // Le reCAPTCHA a été résolu, le formulaire peut être soumis
-                return true;
-            }
-        }
     </script>
 </body>
 
